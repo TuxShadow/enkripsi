@@ -24,13 +24,13 @@ read pilihan
  	if [[ $akan -eq 1 ]]; then
  		echo "Masukan yang akan di Decode : "
  		read decode
- 		echo $decode | base64 --decode
+ 		echo ${ijo} && echo $decode | base64 --decode && echo ${dasar}
 
  	elif [[ $akan -eq 2 ]]; then
  			echo "Masukan yang akan di encode : "
  			read encode
  			clear
- 			echo $encode | base64
+ 			echo ${ijo} && echo $encode | base64 && echo ${dasar}
  	fi
 
 
